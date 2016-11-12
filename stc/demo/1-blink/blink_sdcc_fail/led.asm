@@ -1,7 +1,7 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
 ; Version 3.5.0 #9253 (Mar 24 2016) (Linux)
-; This file was generated Mon Nov  7 04:08:12 2016
+; This file was generated Mon Nov  7 18:30:03 2016
 ;--------------------------------------------------------
 	.module led
 	.optsdcc -mmcs51 --model-small
@@ -11,6 +11,7 @@
 ;--------------------------------------------------------
 	.globl _main
 	.globl _delay
+	.globl _P3_2
 	.globl _CCF0
 	.globl _CCF1
 	.globl _CR
@@ -58,7 +59,6 @@
 	.globl _P3_5
 	.globl _P3_4
 	.globl _P3_3
-	.globl _P3_2
 	.globl _P3_1
 	.globl _P3_0
 	.globl _EA
@@ -317,7 +317,6 @@ _ES	=	0x00ac
 _EA	=	0x00af
 _P3_0	=	0x00b0
 _P3_1	=	0x00b1
-_P3_2	=	0x00b2
 _P3_3	=	0x00b3
 _P3_4	=	0x00b4
 _P3_5	=	0x00b5
@@ -365,6 +364,7 @@ _CF	=	0x00df
 _CR	=	0x00de
 _CCF1	=	0x00d9
 _CCF0	=	0x00d8
+_P3_2	=	0x00b2
 ;--------------------------------------------------------
 ; overlayable register banks
 ;--------------------------------------------------------
@@ -476,7 +476,7 @@ _delay:
 	ar2 = 0x02
 	ar1 = 0x01
 	ar0 = 0x00
-;	led.c:9: for (i=0; i<1000; i++)
+;	led.c:9: for (i=0; i<100; i++)
 	mov	r6,#0x00
 	mov	r7,#0x00
 00106$:
@@ -495,17 +495,17 @@ _delay:
 	mov	a,r2
 	orl	a,r3
 	jnz	00105$
-;	led.c:9: for (i=0; i<1000; i++)
+;	led.c:9: for (i=0; i<100; i++)
 	inc	r6
 	cjne	r6,#0x00,00121$
 	inc	r7
 00121$:
 	clr	c
 	mov	a,r6
-	subb	a,#0xE8
+	subb	a,#0x64
 	mov	a,r7
 	xrl	a,#0x80
-	subb	a,#0x83
+	subb	a,#0x80
 	jc	00106$
 	ret
 ;------------------------------------------------------------
@@ -518,13 +518,17 @@ _delay:
 _main:
 ;	led.c:18: while(1)                        //loop
 00102$:
-;	led.c:20: led = 1;
+;	led.c:20: P3 =0x00;
+	mov	_P3,#0x00
+;	led.c:21: led = 1;
 	setb	_P3_2
-;	led.c:21: delay();                 
+;	led.c:22: delay();  
 	lcall	_delay
-;	led.c:22: led = 0;
+;	led.c:23: P3 = 0xff;
+	mov	_P3,#0xFF
+;	led.c:24: led = 0;
 	clr	_P3_2
-;	led.c:23: delay();                
+;	led.c:25: delay();                
 	lcall	_delay
 	sjmp	00102$
 	.area CSEG    (CODE)

@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        11/07/2016  03:08:01  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/07/2016  19:11:44  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  blink_reg15 (LED)
   B:00B0H.2       PUBLIC        led
   -------         PROC          DELAY
   -------         DO            
-BL51 BANKED LINKER/LOCATER V6.22                                                      11/07/2016  03:08:01  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/07/2016  19:11:44  PAGE 2
 
 
   D:0006H         SYMBOL        i

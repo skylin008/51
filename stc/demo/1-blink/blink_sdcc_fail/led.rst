@@ -1,7 +1,7 @@
                                       1 ;--------------------------------------------------------
                                       2 ; File Created by SDCC : free open source ANSI-C Compiler
                                       3 ; Version 3.5.0 #9253 (Mar 24 2016) (Linux)
-                                      4 ; This file was generated Mon Nov  7 04:08:12 2016
+                                      4 ; This file was generated Mon Nov  7 18:30:03 2016
                                       5 ;--------------------------------------------------------
                                       6 	.module led
                                       7 	.optsdcc -mmcs51 --model-small
@@ -11,54 +11,54 @@
                                      11 ;--------------------------------------------------------
                                      12 	.globl _main
                                      13 	.globl _delay
-                                     14 	.globl _CCF0
-                                     15 	.globl _CCF1
-                                     16 	.globl _CR
-                                     17 	.globl _CF
-                                     18 	.globl _P5_3
-                                     19 	.globl _P5_2
-                                     20 	.globl _P5_1
-                                     21 	.globl _P5_0
-                                     22 	.globl _P4_7
-                                     23 	.globl _P4_6
-                                     24 	.globl _P4_5
-                                     25 	.globl _P4_4
-                                     26 	.globl _P4_3
-                                     27 	.globl _P4_2
-                                     28 	.globl _P4_1
-                                     29 	.globl _P4_0
-                                     30 	.globl _PADC
-                                     31 	.globl _PLVD
-                                     32 	.globl _PPCA
-                                     33 	.globl _EADC
-                                     34 	.globl _ELVD
-                                     35 	.globl _CY
-                                     36 	.globl _AC
-                                     37 	.globl _F0
-                                     38 	.globl _RS1
-                                     39 	.globl _RS0
-                                     40 	.globl _OV
-                                     41 	.globl _F1
-                                     42 	.globl _P
-                                     43 	.globl _PS
-                                     44 	.globl _PT1
-                                     45 	.globl _PX1
-                                     46 	.globl _PT0
-                                     47 	.globl _PX0
-                                     48 	.globl _RD
-                                     49 	.globl _WR
-                                     50 	.globl _T1
-                                     51 	.globl _T0
-                                     52 	.globl _INT1
-                                     53 	.globl _INT0
-                                     54 	.globl _TXD
-                                     55 	.globl _RXD
-                                     56 	.globl _P3_7
-                                     57 	.globl _P3_6
-                                     58 	.globl _P3_5
-                                     59 	.globl _P3_4
-                                     60 	.globl _P3_3
-                                     61 	.globl _P3_2
+                                     14 	.globl _P3_2
+                                     15 	.globl _CCF0
+                                     16 	.globl _CCF1
+                                     17 	.globl _CR
+                                     18 	.globl _CF
+                                     19 	.globl _P5_3
+                                     20 	.globl _P5_2
+                                     21 	.globl _P5_1
+                                     22 	.globl _P5_0
+                                     23 	.globl _P4_7
+                                     24 	.globl _P4_6
+                                     25 	.globl _P4_5
+                                     26 	.globl _P4_4
+                                     27 	.globl _P4_3
+                                     28 	.globl _P4_2
+                                     29 	.globl _P4_1
+                                     30 	.globl _P4_0
+                                     31 	.globl _PADC
+                                     32 	.globl _PLVD
+                                     33 	.globl _PPCA
+                                     34 	.globl _EADC
+                                     35 	.globl _ELVD
+                                     36 	.globl _CY
+                                     37 	.globl _AC
+                                     38 	.globl _F0
+                                     39 	.globl _RS1
+                                     40 	.globl _RS0
+                                     41 	.globl _OV
+                                     42 	.globl _F1
+                                     43 	.globl _P
+                                     44 	.globl _PS
+                                     45 	.globl _PT1
+                                     46 	.globl _PX1
+                                     47 	.globl _PT0
+                                     48 	.globl _PX0
+                                     49 	.globl _RD
+                                     50 	.globl _WR
+                                     51 	.globl _T1
+                                     52 	.globl _T0
+                                     53 	.globl _INT1
+                                     54 	.globl _INT0
+                                     55 	.globl _TXD
+                                     56 	.globl _RXD
+                                     57 	.globl _P3_7
+                                     58 	.globl _P3_6
+                                     59 	.globl _P3_5
+                                     60 	.globl _P3_4
+                                     61 	.globl _P3_3
                                      62 	.globl _P3_1
                                      63 	.globl _P3_0
                                      64 	.globl _EA
@@ -317,54 +317,54 @@
                            0000AF   317 _EA	=	0x00af
                            0000B0   318 _P3_0	=	0x00b0
                            0000B1   319 _P3_1	=	0x00b1
-                           0000B2   320 _P3_2	=	0x00b2
-                           0000B3   321 _P3_3	=	0x00b3
-                           0000B4   322 _P3_4	=	0x00b4
-                           0000B5   323 _P3_5	=	0x00b5
-                           0000B6   324 _P3_6	=	0x00b6
-                           0000B7   325 _P3_7	=	0x00b7
-                           0000B0   326 _RXD	=	0x00b0
-                           0000B1   327 _TXD	=	0x00b1
-                           0000B2   328 _INT0	=	0x00b2
-                           0000B3   329 _INT1	=	0x00b3
-                           0000B4   330 _T0	=	0x00b4
-                           0000B5   331 _T1	=	0x00b5
-                           0000B6   332 _WR	=	0x00b6
-                           0000B7   333 _RD	=	0x00b7
-                           0000B8   334 _PX0	=	0x00b8
-                           0000B9   335 _PT0	=	0x00b9
-                           0000BA   336 _PX1	=	0x00ba
-                           0000BB   337 _PT1	=	0x00bb
-                           0000BC   338 _PS	=	0x00bc
-                           0000D0   339 _P	=	0x00d0
-                           0000D1   340 _F1	=	0x00d1
-                           0000D2   341 _OV	=	0x00d2
-                           0000D3   342 _RS0	=	0x00d3
-                           0000D4   343 _RS1	=	0x00d4
-                           0000D5   344 _F0	=	0x00d5
-                           0000D6   345 _AC	=	0x00d6
-                           0000D7   346 _CY	=	0x00d7
-                           0000AE   347 _ELVD	=	0x00ae
-                           0000AD   348 _EADC	=	0x00ad
-                           0000BF   349 _PPCA	=	0x00bf
-                           0000BE   350 _PLVD	=	0x00be
-                           0000BD   351 _PADC	=	0x00bd
-                           0000C0   352 _P4_0	=	0x00c0
-                           0000C1   353 _P4_1	=	0x00c1
-                           0000C2   354 _P4_2	=	0x00c2
-                           0000C3   355 _P4_3	=	0x00c3
-                           0000C4   356 _P4_4	=	0x00c4
-                           0000C5   357 _P4_5	=	0x00c5
-                           0000C6   358 _P4_6	=	0x00c6
-                           0000C7   359 _P4_7	=	0x00c7
-                           0000C8   360 _P5_0	=	0x00c8
-                           0000C9   361 _P5_1	=	0x00c9
-                           0000CA   362 _P5_2	=	0x00ca
-                           0000CB   363 _P5_3	=	0x00cb
-                           0000DF   364 _CF	=	0x00df
-                           0000DE   365 _CR	=	0x00de
-                           0000D9   366 _CCF1	=	0x00d9
-                           0000D8   367 _CCF0	=	0x00d8
+                           0000B3   320 _P3_3	=	0x00b3
+                           0000B4   321 _P3_4	=	0x00b4
+                           0000B5   322 _P3_5	=	0x00b5
+                           0000B6   323 _P3_6	=	0x00b6
+                           0000B7   324 _P3_7	=	0x00b7
+                           0000B0   325 _RXD	=	0x00b0
+                           0000B1   326 _TXD	=	0x00b1
+                           0000B2   327 _INT0	=	0x00b2
+                           0000B3   328 _INT1	=	0x00b3
+                           0000B4   329 _T0	=	0x00b4
+                           0000B5   330 _T1	=	0x00b5
+                           0000B6   331 _WR	=	0x00b6
+                           0000B7   332 _RD	=	0x00b7
+                           0000B8   333 _PX0	=	0x00b8
+                           0000B9   334 _PT0	=	0x00b9
+                           0000BA   335 _PX1	=	0x00ba
+                           0000BB   336 _PT1	=	0x00bb
+                           0000BC   337 _PS	=	0x00bc
+                           0000D0   338 _P	=	0x00d0
+                           0000D1   339 _F1	=	0x00d1
+                           0000D2   340 _OV	=	0x00d2
+                           0000D3   341 _RS0	=	0x00d3
+                           0000D4   342 _RS1	=	0x00d4
+                           0000D5   343 _F0	=	0x00d5
+                           0000D6   344 _AC	=	0x00d6
+                           0000D7   345 _CY	=	0x00d7
+                           0000AE   346 _ELVD	=	0x00ae
+                           0000AD   347 _EADC	=	0x00ad
+                           0000BF   348 _PPCA	=	0x00bf
+                           0000BE   349 _PLVD	=	0x00be
+                           0000BD   350 _PADC	=	0x00bd
+                           0000C0   351 _P4_0	=	0x00c0
+                           0000C1   352 _P4_1	=	0x00c1
+                           0000C2   353 _P4_2	=	0x00c2
+                           0000C3   354 _P4_3	=	0x00c3
+                           0000C4   355 _P4_4	=	0x00c4
+                           0000C5   356 _P4_5	=	0x00c5
+                           0000C6   357 _P4_6	=	0x00c6
+                           0000C7   358 _P4_7	=	0x00c7
+                           0000C8   359 _P5_0	=	0x00c8
+                           0000C9   360 _P5_1	=	0x00c9
+                           0000CA   361 _P5_2	=	0x00ca
+                           0000CB   362 _P5_3	=	0x00cb
+                           0000DF   363 _CF	=	0x00df
+                           0000DE   364 _CR	=	0x00de
+                           0000D9   365 _CCF1	=	0x00d9
+                           0000D8   366 _CCF0	=	0x00d8
+                           0000B2   367 _P3_2	=	0x00b2
                                     368 ;--------------------------------------------------------
                                     369 ; overlayable register banks
                                     370 ;--------------------------------------------------------
@@ -476,7 +476,7 @@
                            000002   476 	ar2 = 0x02
                            000001   477 	ar1 = 0x01
                            000000   478 	ar0 = 0x00
-                                    479 ;	led.c:9: for (i=0; i<1000; i++)
+                                    479 ;	led.c:9: for (i=0; i<100; i++)
       000062 7E 00            [12]  480 	mov	r6,#0x00
       000064 7F 00            [12]  481 	mov	r7,#0x00
       000066                        482 00106$:
@@ -495,17 +495,17 @@
       000076 EA               [12]  495 	mov	a,r2
       000077 4B               [12]  496 	orl	a,r3
       000078 70 F0            [24]  497 	jnz	00105$
-                                    498 ;	led.c:9: for (i=0; i<1000; i++)
+                                    498 ;	led.c:9: for (i=0; i<100; i++)
       00007A 0E               [12]  499 	inc	r6
       00007B BE 00 01         [24]  500 	cjne	r6,#0x00,00121$
       00007E 0F               [12]  501 	inc	r7
       00007F                        502 00121$:
       00007F C3               [12]  503 	clr	c
       000080 EE               [12]  504 	mov	a,r6
-      000081 94 E8            [12]  505 	subb	a,#0xE8
+      000081 94 64            [12]  505 	subb	a,#0x64
       000083 EF               [12]  506 	mov	a,r7
       000084 64 80            [12]  507 	xrl	a,#0x80
-      000086 94 83            [12]  508 	subb	a,#0x83
+      000086 94 80            [12]  508 	subb	a,#0x80
       000088 40 DC            [24]  509 	jc	00106$
       00008A 22               [24]  510 	ret
                                     511 ;------------------------------------------------------------
@@ -518,16 +518,20 @@
       00008B                        518 _main:
                                     519 ;	led.c:18: while(1)                        //loop
       00008B                        520 00102$:
-                                    521 ;	led.c:20: led = 1;
-      00008B D2 B2            [12]  522 	setb	_P3_2
-                                    523 ;	led.c:21: delay();                 
-      00008D 12 00 62         [24]  524 	lcall	_delay
-                                    525 ;	led.c:22: led = 0;
-      000090 C2 B2            [12]  526 	clr	_P3_2
-                                    527 ;	led.c:23: delay();                
-      000092 12 00 62         [24]  528 	lcall	_delay
-      000095 80 F4            [24]  529 	sjmp	00102$
-                                    530 	.area CSEG    (CODE)
-                                    531 	.area CONST   (CODE)
-                                    532 	.area XINIT   (CODE)
-                                    533 	.area CABS    (ABS,CODE)
+                                    521 ;	led.c:20: P3 =0x00;
+      00008B 75 B0 00         [24]  522 	mov	_P3,#0x00
+                                    523 ;	led.c:21: led = 1;
+      00008E D2 B2            [12]  524 	setb	_P3_2
+                                    525 ;	led.c:22: delay();  
+      000090 12 00 62         [24]  526 	lcall	_delay
+                                    527 ;	led.c:23: P3 = 0xff;
+      000093 75 B0 FF         [24]  528 	mov	_P3,#0xFF
+                                    529 ;	led.c:24: led = 0;
+      000096 C2 B2            [12]  530 	clr	_P3_2
+                                    531 ;	led.c:25: delay();                
+      000098 12 00 62         [24]  532 	lcall	_delay
+      00009B 80 EE            [24]  533 	sjmp	00102$
+                                    534 	.area CSEG    (CODE)
+                                    535 	.area CONST   (CODE)
+                                    536 	.area XINIT   (CODE)
+                                    537 	.area CABS    (ABS,CODE)
