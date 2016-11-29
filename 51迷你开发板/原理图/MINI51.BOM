@@ -1,0 +1,31 @@
+Bill of Material for MINI51.SCHDOC
+On 2010/9/11 at 9:56:10
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+                     HEAD1X2          3    J1, J3, JP2                  Header, 2-Pin        
+                     HEAD1X3          1    JP1                          Header, 3-Pin        
+                     HEAD1X9          4    P0, P1, P2, P3               Header, 9-Pin        
+                     HEAD2X5          1    AT_ISP                       Header, 5-Pin, Dual row 
+                     KEY              1    RST                                               
+                     SMD_LED          1    PWR                                               
+                     SW7              1    PWR_SW                                            
+                     USB_5P           1    USB_5P                                            
+ 0.1uF               0805C            2    C8, C10                      Capacitor            
+ 10K                 0805R            1    R1                                                
+ 10uF/16V            1206             3    C1, C6, C9                   Polarized Capacitor (Axial) 
+ 12MHz               XTAL200          2    Y1, Y2                       Crystal Oscillator   
+ 1K                  0805R            3    R5, R6, R7                                        
+ 1K¡Á8               RP8              1    RP2                                               
+ 4.7K                0805             1    R8                                                
+ 4.7K¡Á8             RP8              1    RP1                                               
+ AMS1117             SOT223           1    U3                                                
+ AT89S5x             40PLOCK          1    U1                                                
+ Cap                 0805C            5    C2, C3, C4, C5, C7           Capacitor            
+ Input               HEAD1X3          1    J2                           Header, 3-Pin        
+ LED3                SMD _LED         8    DS1, DS2, DS3, DS4, DS5, DS6 Typical BLUE SiC LED 
+                                           DS7, DS8
+ LED3                SMD_LED          2    RX, TX                       Typical BLUE SiC LED 
+ PL2303HX            SSOP28           1    U2                                                
+ Res1                0805R            3    R2, R3, R4                   Resistor             
+ Select              HEAD1X3          1    JP3                          Header, 3-Pin        
